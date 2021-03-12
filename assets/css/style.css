@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* reset */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* container */ 
+.container {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+}
+
+/* row with clearfix hack */
+
+.row{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.row::before,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* column */
+.column{
+  width: 100%;
+  float: left;
+}
+
+/* sm */
+@media (min-width: 576px){
+  .col-sm-12{
+    width: calc(100%/12*12);
+  }
+  .col-sm-11{
+    width: calc(100%/12*11);
+  }
+  .col-sm-10{
+    width: calc(100%/12*10);
+  }
+  .col-sm-9{
+    width: calc(100%/12*9);
+  }
+  .col-sm-8{
+    width: calc(100%/12*8);
+  }
+  .col-sm-7{
+    width: calc(100%/12*7);
+  }
+  .col-sm-6{
+    width: calc(100%/12*6);
+  }
+  .col-sm-5{
+    width: calc(100%/12*5);
+  }
+  .col-sm-4{
+    width: calc(100%/12*4);
+  }
+  .col-sm-3{
+    width: calc(100%/12*3);
+  }
+  .col-sm-2{
+    width: calc(100%/12*2);
+  }
+  .col-sm-1{
+    width: calc(100%/12*1);
+  }
+  
+  
+  
+}
+/* md */
+@media (min-width: 768px){
+    .col-md-1{
+    width: calc(100%/12*1);
+  }
+    .col-md-2{
+    width: calc(100%/12*2);
+  }
+    .col-md-3{
+    width: calc(100%/12*3);
+  }
+    .col-md-4{
+    width: calc(100%/12*4);
+  }
+    .col-md-5{
+    width: calc(100%/12*5);
+  }
+    .col-md-6{
+    width: calc(100%/12*6);
+  }
+    .col-md-7{
+    width: calc(100%/12*7);
+  }
+    .col-md-8{
+    width: calc(100%/12*8);
+  }
+    .col-md-9{
+    width: calc(100%/12*9);
+  }
+    .col-md-10{
+    width: calc(100%/12*10);
+  }
+    .col-md-11{
+    width: calc(100%/12*11);
+  }
+    .col-md-12{
+    width: calc(100%/12*12);
+  }
+}
+@media (min-width: 992px){
+  .col-lg-1{
+    width: calc(100%/12);
+  }
+  .col-lg-2{
+    width: calc(100%/12*2);
+  }
+  .col-lg-3{
+    width: calc(100%/12*3);
+  }
+  .col-lg-4{
+    width: calc(100%/12*4);
+  }
+  .col-lg-5{
+    width: calc(100%/12*5);
+  }
+  .col-lg-6{
+    width: calc(100%/12*6);
+  }
+  .col-lg-7{
+    width: calc(100%/12*7);
+  }
+  .col-lg-8{
+    width: calc(100%/12*8);
+  }
+  .col-lg-9{
+    width: calc(100%/12*9);
+  }
+  .col-lg-10{
+    width: calc(100%/12*10);
+  }
+  .col-lg-11{
+    width: calc(100%/12*11);
+  }
+  .col-lg-12{
+    width: calc(100%/12*12);
+  }
+}
+
+/* xl */
+@media (min-width: 1200px){
+
+    .col-xl-1{
+    width: calc(100%/12);
+  }
+    .col-xl-2{
+    width: calc(100%/12*2);
+  }
+    .col-xl-3{
+    width: calc(100%/12*3);
+  }
+    .col-xl-4{
+    width: calc(100%/12*4);
+  }
+    .col-xl-5{
+    width: calc(100%/12*5);
+  }
+    .col-xl-6{
+    width: calc(100%/12*6);
+  }
+    .col-xl-7{
+    width: calc(100%/12*7);
+  }
+    .col-xl-8{
+    width: calc(100%/12*8);
+  }
+    .col-xl-9{
+    width: calc(100%/12*9);
+  }
+    .col-xl-10{
+    width: calc(100%/12*10);
+  }
+    .col-xl-11{
+    width: calc(100%/12*11);
+  }
+    .col-xl-12{
+    width: calc(100%/12*12);
+  }
+  
+  
+  
+}
+
+/* xxl */
+
+@media (min-width: 1400px){
+  .col-xxl-1{
+    width: calc(100%/12);
+  }
+    .col-xxl-2{
+    width: calc(100%/12*2);
+  }
+    .col-xxl-3{
+    width: calc(100%/12*3);
+  }
+    .col-xxl-4{
+    width: calc(100%/12*4);
+  }
+    .col-xxl-5{
+    width: calc(100%/12*5);
+  }
+    .col-xxl-6{
+    width: calc(100%/12*6);
+  }
+    .col-xxl-7{
+    width: calc(100%/12*7);
+  }
+    .col-xxl-8{
+    width: calc(100%/12*8);
+  }
+    .col-xxl-9{
+    width: calc(100%/12*9);
+  }
+    .col-xxl-10{
+    width: calc(100%/12*10);
+  }
+    .col-xxl-11{
+    width: calc(100%/12*11);
+  }
+    .col-xxl-12{
+    width: calc (100%/12*12);
+  }
+
+}
+
+/* services */
+
+#welcome{
+  text-align: center;
+  padding: 48px 10px;
+}
+
+/* img.img-services{
+  width: 100%;
+  max-width: 64px;
+  margin: 16px 0;
+}
+
+p.p-services{
+  font-size: 1.125rem;
+  font-weight: 600;
+  max-width: 100%;
+}
+
+@media (min-width: 1200px){
+  img.img-services{
+    margin-top: 0;
+  }
+} */
+
+
+
+/* hero */
+#hero{ 
+  background-image: url(https://www.bpi.com.ph/content/atom/33f50d91-c898-4666-8a69-e09d571c5dcc/content/Images/Header%20Banners/hero_home_about.jpg?id=bb505974-ea87-4b5a-b5bf-eeb5d76aa62a);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+#hero btn{
+  padding: 1em;
+  color: #b11116;
+  background: white;
+  margin-top: 10px;
+  border-radius: 8%;
+}
+
+@media (min-width: 768px){
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1200px){
+  h1 {
+    font-size: 64px;
+  }
+}
+
+.pl-1{
+  padding-left: 1rem;
+}
+
+.pl-2{
+  padding-left: 2rem;
+}
+
+.pl-3{
+  padding-left: 3rem;
+}
+
+.mb-1{
+  margin-bottom: 1rem;
+}
+
+/* welcome */
+#welcome h1{
+  color: gray;
+  padding-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+/* loans and annoucements */
+
+.announcements a{
+  color: maroon;
+  text-decoration: none;
+}
+
+.announcements h4{
+  color: lightgray;
+}
+
+.announcements img{
+  width: 100%;
+}
+
+.hands-img{
+  max-height: 240px;
+}
+
+.announcements a:hover{
+  text-decoration: underline;
+}
+
+.card-text {
+  padding: 15px;
+}
+
+.card {
+  border: 1px solid lightgray;
+  min-height: 400px;
+}
+
+.p-1{
+  padding: 1rem;
+}
+
+.card-content{
+  z-index: 1;
+  background: white;
+  max-width: 440px;
+  padding: 15px;
+}
+
+.card-left{
+  padding-top: 200px;
+  background-image: url(https://www.bpi.com.ph/content/atom/33f50d91-c898-4666-8a69-e09d571c5dcc/content/Images/Content%20Cards/content_card_clients1.jpg?id=01f0419c-48a1-4c22-88a7-ee4437c90b2e);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: left;
+}
+
+.col{
+    float: left;
+    width: calc(100% / 12 * 4);
+    font-size: 16px;   
+    overflow: hidden;
+    padding:12px;
+  }
+.inner{
+    border: 1px solid gray;
+    height: 400px;
+}
+.card-2{
+    background-clip: border-box;
+    background-size: cover;
+    height: 172px;
+  }
+.card-2 img{
+    height: 172px;
+    width: 100%;
+  }
+
+  .description-content {
+    min-height: 160px;
+  }
+
+.description h2{
+    font-size: 20px;
+    color:#4a4a4a;
+    text-align:justify;
+    margin: 8px 0px;
+  }
+.description h3{
+      font-size: 16px;
+      margin-bottom: 3px;
+      color:#9b9b9b;
+  }
+.description p{
+      font-size: 16px;
+      margin-bottom: 16px;
+      color:#9b9b9b;
+  }
+
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(163, 36, 36);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+  }
+a:hover{
+    text-decoration:underline;   
+}
+
+.description{
+    padding: 24px;
+    font: 16px;
+    line-height: 1.6;
+}
+
+/*Jes Code*/
+/* .widget-cta_container{
+  width: 100%;
+  max-width:  450px;
+  margin: 0 auto;
+  height: 333px;
+  background: url('/images/cta_container.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 48px;
+} */
+/* 
+.widget-cta_title{
+  margin: auto;
+  max-width: 512px;
+  font-size: .875rem;
+  letter-spacing: .08rem;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 28px;
+  background-color: #fff;
+}
+
+p.widget-cta_text{
+  margin: auto;
+  max-width: 512px;
+  font-size: 1.125rem;
+  letter-spacing: .04rem;
+  line-height: 1.33;
+  text-align:center;
+  background-color: #fff;
+  padding-bottom: 24px;
+} */
+
+.btn-primary{
+  margin-top: 20px;
+  padding: .6875rem 1rem;
+  color: #fff;
+  background-color: #b11116;
+  border-color: #b11116;
+  letter-spacing: .04rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 4px;
+}
+/*end Jes Code*/
+
+
+/* Awards-Tamargo css */
+#awards{
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+background-image: url(https://www.bpi.com.ph/content/atom/33f50d91-c898-4666-8a69-e09d571c5dcc/content/Personal/Homepage%20Narrative/Nov%209/call_to_action_homepage_euromoney_v3.jpg?id=643c1f88-9ee4-4707-a390-217fd396eded);
+width: 100%;
+height: 307px;
+padding: 36px 0;
+margin: 0 auto;
+}
+.text-center{
+  text-align:  center;
+}
+.awards-col{
+  margin: 0 auto;
+  background-color: white;
+  width: 100%;
+  max-width: 470px;
+  padding: 24px;
+}
+h3{
+      margin-bottom: 12px;
+}
+
+
+ .header-underline{
+      text-decoration: none; 
+      position: relative; 
+ }   
+
+ 
+ .header-underline::after{    
+
+      position: absolute;
+      content: '';
+      height: 2px;
+      bottom: -12px; 
+      margin: 0 auto;
+		  left: 0;
+      right: 0;
+		  width: 20%;
+		  background: lightgray;
+    }
+.awards-col p{
+  margin: 16px 0;
+  width: 100%;
+}
+
+/* Learn-more Button Css */
+.btn-primary{
+    color: #fff;
+    background-color: #b11116;
+    border-color: #b11116;
+}
+.btn-learn {
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    letter-spacing: .03125em;
+    padding: .6875rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 4px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+@media (min-width: 992px){
+  .awards-col{
+    max-width: 512px;
+  }
+}
+/* Awards-Tamargo css end */
+
+/* glad code */
+
+#section-gc{
+    height: 500px;
+}
+
+.gc-image{
+    height: 170px;
+    width: 320px;
+    object-fit: cover;
+}
+
+.in-padding{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.in-padding h3{
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.in-padding h4{
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+
+.gc-link{
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.box{
+    margin: 0 auto;
+    border: gray 1px solid;
+    width: 320px;
+    height: 400px;
+
+}
+
+.c-padding{
+  padding: 10px 10px 10px 10px;
+}
+
+.r-padding{
+  padding: 30px 30px 30px 30px;
+}
+
+/* glad code */
